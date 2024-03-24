@@ -1,7 +1,23 @@
 body {
   margin: 0px;
 }
+
 .container {
   height: 100vh;
   background-color: grey;
+  display: flex;
+}
+
+.left {
+  width: 35%;
+  background-image: url(plants.jpg);
+  background-size: cover;
+}
+
+.right {
+  width: 65%;
+}
+
+.container .left .right {
+  border: 5px dashed aquamarine;
 }
