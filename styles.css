@@ -53,10 +53,19 @@ img {
   display: flex;
   flex-direction: column;
   width: 65%;
+  padding-left: 3%;
 }
 .top {
+  padding-top: 10%;
+  padding-right: 20%;
   border: 2px yellow dashed;
-  min-height: 34%;
+  min-height: 30%;
+}
+.top,
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: larger;
 }
 .middle {
   border: 2px yellow dashed;
