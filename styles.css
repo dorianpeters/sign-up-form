@@ -130,6 +130,11 @@ input:focus {
   border: 2px red solid;
   box-shadow: none;
 }
+.no_match::after {
+  font-size: 0.5rem;
+  content: "Passwords do not match";
+  color: red;
+}
 
 button {
   background-color: #596d48;

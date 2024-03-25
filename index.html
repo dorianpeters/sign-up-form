@@ -71,6 +71,7 @@
                     name="password"
                     required
                   />
+                  <span id="no_match_id" class="no_match"></span>
                 </li>
                 <li>
                   <label for="password_confirm">Confirm Password</label><br />
@@ -95,6 +96,7 @@
     <script>
       const password = document.querySelector("#password");
       const passwordConfirm = document.querySelector("#password_confirm");
+      const noMatch = document.querySelector("#no_match_id");
 
       password.addEventListener("blur", () => {
         const passwordVal = password.value;
@@ -103,14 +105,17 @@
         if (passwordVal !== passwordConfirmVal) {
           password.classList.add("error");
           passwordConfirm.classList.add("error");
+          noMatch.classList.add("no_match");
         }
         if (passwordVal === passwordConfirmVal) {
           password.classList.remove("error");
           passwordConfirm.classList.remove("error");
+          noMatch.classList.remove("no_match");
         }
         if (!passwordVal && !passwordConfirmVal) {
           password.classList.add("error");
           passwordConfirm.classList.add("error");
+          noMatch.classList.add("no_match");
         }
       });
       passwordConfirm.addEventListener("blur", () => {
@@ -120,14 +125,17 @@
         if (passwordVal !== passwordConfirmVal) {
           password.classList.add("error");
           passwordConfirm.classList.add("error");
+          noMatch.classList.add("no_match");
         }
         if (passwordVal === passwordConfirmVal) {
           password.classList.remove("error");
           passwordConfirm.classList.remove("error");
+          noMatch.classList.remove("no_match");
         }
         if (!passwordVal && !passwordConfirmVal) {
           password.classList.add("error");
           passwordConfirm.classList.add("error");
+          noMatch.classList.add("no_match");
         }
       });
     </script>
