@@ -43,9 +43,9 @@
 
         <div class="middle">
           <h2>Let's do this!</h2>
-          <div class="inputs">
+          <div>
             <form action="" method="post">
-              <ul>
+              <ul class="inputs">
                 <li>
                   <label for="first_name">First Name</label><br />
                   <input type="text" id="first_name" name="first_name" />
@@ -64,11 +64,17 @@
                 </li>
                 <li>
                   <label for="password">Password</label><br />
-                  <input type="password" id="password" name="password" />
+                  <input
+                    class="error"
+                    type="password"
+                    id="password"
+                    name="password"
+                  />
                 </li>
                 <li>
                   <label for="password_confirm">Confirm Password</label><br />
                   <input
+                    class="error"
                     type="password"
                     id="password_confirm"
                     name="password_confirm"
@@ -78,11 +84,9 @@
             </form>
           </div>
         </div>
-        <div class="botton">
-          <li class="button">
-            <button type="submit">Send your message</button>
-          </li>
-          <p>Already have an account?<a>Log in</a></p>
+        <div class="bottom">
+          <button type="submit">Send your message</button>
+          <p>Already have an account? <a>Log in</a></p>
         </div>
       </div>
     </div>

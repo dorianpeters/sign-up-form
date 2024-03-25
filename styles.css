@@ -43,6 +43,12 @@ body {
   color: white;
   justify-content: center;
 }
+a {
+  color: white;
+}
+a:visited {
+  color: white;
+}
 img {
   height: 100%;
   width: auto;
@@ -52,14 +58,16 @@ img {
 .right {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   width: 65%;
   padding-left: 3%;
 }
 .top {
   padding-top: 10%;
   padding-right: 20%;
+  padding-bottom: 5%;
   border: 2px yellow dashed;
-  min-height: 30%;
+  min-height: 10%;
 }
 .top,
 p {
@@ -69,7 +77,8 @@ p {
 }
 .middle {
   border: 2px yellow dashed;
-  min-height: 30%;
+  min-height: 35%;
+  padding-right: 15%;
 }
 
 .middle,
@@ -79,9 +88,60 @@ h2 {
   font-size: larger;
 }
 .bottom {
-  min-height: 34%;
+  padding-top: 5%;
+  padding-left: 5%;
+  min-height: 10%;
   border: 2px yellow dashed;
 }
-.container .left .right {
-  border: 5px dashed aquamarine;
+
+label {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 500;
+  font-size: small;
+  text-transform: uppercase;
+}
+
+input {
+  width: 90%;
+  height: 90%;
+  border-radius: 5px;
+  border-color: #e5e7eb;
+  box-shadow: none;
+}
+input:focus {
+  border: 2px blue solid;
+  box-shadow: 2px 2px blue;
+}
+.inputs {
+  display: flex;
+  align-content: space-around;
+  flex-wrap: wrap;
+  list-style-type: none;
+  gap: 30px;
+  row-gap: 60px;
+  padding-top: 5%;
+}
+
+.inputs li {
+  flex-basis: 40%;
+  height: 30px;
+  min-width: 150px;
+  flex-grow: 1;
+}
+
+.error {
+  border: 2px red solid;
+  box-shadow: none;
+}
+
+button {
+  background-color: #596d48;
+  color: white;
+  padding: 15px 30px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.bottom a {
+  color: green;
 }
