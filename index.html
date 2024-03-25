@@ -69,6 +69,7 @@
                     type="password"
                     id="password"
                     name="password"
+                    required
                   />
                 </li>
                 <li>
@@ -78,6 +79,7 @@
                     type="password"
                     id="password_confirm"
                     name="password_confirm"
+                    required
                   />
                 </li>
               </ul>
@@ -90,5 +92,44 @@
         </div>
       </div>
     </div>
+    <script>
+      const password = document.querySelector("#password");
+      const passwordConfirm = document.querySelector("#password_confirm");
+
+      password.addEventListener("blur", () => {
+        const passwordVal = password.value;
+        const passwordConfirmVal = passwordConfirm.value;
+
+        if (passwordVal !== passwordConfirmVal) {
+          password.classList.add("error");
+          passwordConfirm.classList.add("error");
+        }
+        if (passwordVal === passwordConfirmVal) {
+          password.classList.remove("error");
+          passwordConfirm.classList.remove("error");
+        }
+        if (!passwordVal && !passwordConfirmVal) {
+          password.classList.add("error");
+          passwordConfirm.classList.add("error");
+        }
+      });
+      passwordConfirm.addEventListener("blur", () => {
+        const passwordVal = password.value;
+        const passwordConfirmVal = passwordConfirm.value;
+
+        if (passwordVal !== passwordConfirmVal) {
+          password.classList.add("error");
+          passwordConfirm.classList.add("error");
+        }
+        if (passwordVal === passwordConfirmVal) {
+          password.classList.remove("error");
+          passwordConfirm.classList.remove("error");
+        }
+        if (!passwordVal && !passwordConfirmVal) {
+          password.classList.add("error");
+          passwordConfirm.classList.add("error");
+        }
+      });
+    </script>
   </body>
 </html>
