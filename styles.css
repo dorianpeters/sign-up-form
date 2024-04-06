@@ -63,9 +63,9 @@ img {
   padding-left: 3%;
 }
 .top {
-  padding-top: 10%;
-  padding-right: 20%;
-  padding-bottom: 5%;
+  padding-top: 2%;
+  padding-right: 15%;
+  padding-bottom: 2%;
   min-height: 10%;
 }
 .top,
@@ -116,7 +116,7 @@ input:focus {
   list-style-type: none;
   gap: 30px;
   row-gap: 60px;
-  padding-top: 5%;
+  padding-top: 0%;
 }
 
 .inputs li {
